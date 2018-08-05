@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rest-api-with-mongo
+
+server:
+  port: 5501
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:5500/eureka/
+  instance:
+    hostname: localhost
